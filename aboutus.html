@@ -12,6 +12,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style >
+    .panel{border: 0px;}
+    .panel-body>p{ text-align: center;}
+
+    </style>
 
 </head>
 <body>
@@ -183,7 +188,7 @@
         <span class="icon-bar"></span>
     </button>
     <div>
-        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle">
+        <a class="navbar-brand" id="menu-toggle">
             <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Pets Paradise</a>
 
           
@@ -201,10 +206,6 @@
                 </div>
               </div>
           </form>
-     
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="aboutus">About Us<span class="sr-only">(current)</span></a></li>
-    </ul>
 
     <ul class="nav navbar-nav navbar-right">
         <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#signUpModal">Signup</button></li>
@@ -222,80 +223,74 @@
 
 
 
-
-
-
-
-<div id="wrapper">
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <a href="#">All Pets</a>
-            </li>
-            <li>
-                <a href="#">Dogs</a>
-            </li>
-            <li>
-                <a href="#">Cats</a>
-            </li>
-            <li>
-                <a href="#">List Pet</a>
-            </li>
-            <li>
-                <a href="#">News</a>
-            </li>
-            <li>
-                <a href="#">About Us</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
+<div class="container-fluid" >
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Search results/ homepage</h1>
-                    <p>This is where all the body elements of the page go...</p>
-                    <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-
+                <div class="col-sm-1"><br />
+                    </div>
+                <div class="col-sm-11">
+                    <h1>Our Team</h1>
                 </div>
 
 
                 <div class="row">
-                   <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-1"><br />
+                    </div>
+                   <div class="col-sm-3 col-xs-6">
                     <div class="panel panel-default">
                       <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD3333/EE3333" class="img-responsive"></div>
                       <div class="panel-body">
-                        <p class="lead">Animal 1</p>
-                        <p>Description</p>
+                        <p class="lead">Jonathan</p>
 
                     </div>
                 </div>
             </div><!--/col-->
 
-            <div class="col-sm-4 col-xs-6">
+            <div class="col-sm-3 col-xs-6">
                 <div class="panel panel-default">
                   <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></div>
                   <div class="panel-body">
-                    <p class="lead">Animal 2</p>
-                    <p>Description</p>
+                    <p class="lead">Kevin</p>
                 </div>
             </div>
         </div><!--/col-->
 
-        <div class="col-sm-4 col-xs-6">
+        <div class="col-sm-3 col-xs-6">
             <div class="panel panel-default">
               <div class="panel-thumbnail"><img src="//placehold.it/450X300/2222DD/2222EE" class="img-responsive"></div>
               <div class="panel-body">
-                <p class="lead">Animal 3</p>
-                <p>Description</p>
+                <p class="lead">Omar</p>
+            </div>
+        </div>
+    </div><!--/col-->
+
+</div>
+<div class="row">
+                    <div class="col-sm-1"><br />
+                    </div>
+                   <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD3333/EE3333" class="img-responsive"></div>
+                      <div class="panel-body">
+                        <p class="lead">Moaan</p>
+
+                    </div>
+                </div>
+            </div><!--/col-->
+
+            <div class="col-sm-3 col-xs-6">
+                <div class="panel panel-default">
+                  <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></div>
+                  <div class="panel-body">
+                    <p class="lead">Raymond</p>
+                </div>
+            </div>
+        </div><!--/col-->
+
+        <div class="col-sm-3 col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img src="//placehold.it/450X300/2222DD/2222EE" class="img-responsive"></div>
+              <div class="panel-body">
+                <p class="lead">Jinying</p>
             </div>
         </div>
     </div><!--/col-->
@@ -304,25 +299,13 @@
 
 
 
-
             </div>
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
-
-</div>
 
 
 
 
-
-
-<script>
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
-</script>
 
 
 
