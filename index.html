@@ -186,18 +186,21 @@
         <a class="navbar-brand" href="#menu-toggle" id="menu-toggle">
             <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Pets Paradise</a>
 
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search for Pets">
-              </div>
-              <button type="submit" class="btn btn-default">Search</button>
-          </form>
+          
       </div>   
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+    <form class="navbar-form pull-left">
+              <div class="input-group" style="max-width:470px;">
+                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+          </form>
 
     <ul class="nav navbar-nav navbar-right">
         <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#signUpModal">Signup</button></li>
@@ -259,6 +262,42 @@
                     <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
 
                 </div>
+
+
+                <div class="row">
+                 <div class="col-sm-4 col-xs-6">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD3333/EE3333" class="img-responsive"></div>
+                      <div class="panel-body">
+                        <p class="lead">Animal 1</p>
+
+                  </div>
+              </div>
+          </div><!--/col-->
+
+          <div class="col-sm-4 col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></div>
+              <div class="panel-body">
+                <p class="lead">Animal 2</p>
+          </div>
+      </div>
+  </div><!--/col-->
+
+  <div class="col-sm-4 col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-thumbnail"><img src="//placehold.it/450X300/2222DD/2222EE" class="img-responsive"></div>
+      <div class="panel-body">
+        <p class="lead">Animal 3</p>
+  </div>
+</div>
+</div><!--/col-->
+
+</div>
+
+
+
+
             </div>
         </div>
     </div>
@@ -266,12 +305,25 @@
 
 </div>
 
+
+
+
+
+
 <script>
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
 </script>
+
+
+
+
+
+
+
+
 
 <footer class="footer">
   <div class="container">

@@ -1,3 +1,33 @@
-body { padding-top: 50px; }
+body { padding-top: 50px;
 
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+   }
+.btn, .form-control, .panel, .list-group, .well {
+  border-radius: 1px;
+  box-shadow: 0 0 0;
+}
 
+button{
+  padding: 2px 6px 3px;
+  border: 2px outset buttonface;
+  margin: 0em;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+}
+
+.btn-primary, .label-primary, .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: #4285f4;
+  padding: none;
+}
+.btn-lg, .btn-group-lg>.btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  }
