@@ -1,11 +1,11 @@
 /*Moaan's simpler sidebar style*/
 /*///////////////////////////////////////////////////////////////*/
 #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
+    padding-left: 50px;
+    /*-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
 }
 
 #sidebar-wrapper {
@@ -16,11 +16,12 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    /*background: #000;*/
-    -webkit-transition: all 0.5s ease;
+    /*background: #CCCCCC;*/
+    padding: 1.1em 1.1em 1.1em 1.1em;
+    /*-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
 }
 
 #page-content-wrapper {
@@ -44,9 +45,6 @@
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
-}
-
-.sidebar-nav li p {
     display: block;
     text-decoration: none;
     font-size: 12px;

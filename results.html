@@ -171,7 +171,6 @@
 
 
 
-
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -193,28 +192,28 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-        <form class="navbar-form pull-left">
+        <!-- No need for this for now<form class="navbar-form pull-left">
           <div class="input-group" style="max-width:470px;">
             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
             <div class="input-group-btn">
               <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
           </div>
-      </div>
-  </form>
+        </form>-->
   
   <ul class="nav navbar-nav">
     
-    <li class="active"><a href="#">Dogs<span class="sr-only">(current)</span></a></li>
-    <li class="active"><a href="#">Cats<span class="sr-only">(current)</span></a></li>
+    <li class="active"><a href="results.html">Dogs<span class="sr-only">(current)</span></a></li>
+    <li class="active"><a href="results.html">Cats<span class="sr-only">(current)</span></a></li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other Pets <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">pet1</a></li>
-          <li><a href="#">pet2</a></li>
-          <li><a href="#">pet3</a></li>
+          <li><a href="results.html">pet1</a></li>
+          <li><a href="results.html">pet2</a></li>
+          <li><a href="results.html">pet3</a></li>
       </ul>
   </li>
-  <li class="active"><a href="#">All Pets<span class="sr-only">(current)</span></a></li>
+  <li class="active"><a href="results.html">All Pets<span class="sr-only">(current)</span></a></li>
   <li class="active"><a href="#">Donate a Pet<span class="sr-only">(current)</span></a></li>
   <li class="active"><a href="#">Contact Us<span class="sr-only">(current)</span></a></li>
   <li class="active"><a href="aboutus.html">About Us<span class="sr-only">(current)</span></a></li>
@@ -240,52 +239,40 @@
 
 
 
-
 <div id="wrapper">
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li>
-                <p>
-                Pet Type: 
-                    <select> 
-                        <option value="dog">Dogs</option>
-                        <option value="cats">Cats</option>
-                        <option value="birds">Birds</option>
-                        <option value="fish">Fish</option>
-                    </select>
-                </p>
-            </li>
-            <li>
-                <p>
-                <!--Gender:
-                    <fieldset>
-                        <label for="male">Male</label><input type="radio" id="male" value="male">
-                        <label for="female">Female</label><input type="radio" id="female" value="female">
-                    </fieldset>-->
-                    <fieldset>
-                        <legend>Gender:</legend>
-                        <input id="male" type="radio" name="gender" value="male">
-                        <label for="male">Male</label>
-                        <input id="female" type="radio" name="gender" value="female">
-                        <label for="female">Female</label>
-                    </fieldset>
-                </p>
-            </li>
-            <li>
-                <p>
-                Age:
+
+        <fieldset>
+            <legend><h2>Filters</h2></legend>
+                <label for="type">Pet Type:</label> 
+                <select id="type"> 
+                    <option value="dog">Dogs</option>
+                    <option value="cats">Cats</option>
+                    <option value="birds">Birds</option>
+                    <option value="fish">Fish</option>
+                </select>
+                <br>
+
+                <br>
+                <input id="male" type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+                <br>
+
+                <br>
+                <label>Age:</label>
                 Can we do "min" & "max" ?
-                </p>
-            </li>
-            <li>
-                <p>
+                <br>
+
+                <br>
                 <label for="location">Location:</label>
                 <input type="text" id="location">
-                </p>
-            </li>
-        </ul>
+                <br>
+                <br>
+        </fieldset>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -302,9 +289,9 @@
                 <div class="row">
                  <div class="col-sm-4 col-xs-6">
                     <div class="panel panel-default">
-                      <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD3333/EE3333" class="img-responsive"></div>
+                      <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/DD3333/EE3333" class="img-responsive"></a></div>
                       <div class="panel-body">
-                        <p class="lead">Animal 1</p>
+                        <p class="lead"><a href="petpage.html">Animal 1</a></p>
                         <p>Description</p>
 
                     </div>
@@ -313,9 +300,9 @@
 
             <div class="col-sm-4 col-xs-6">
                 <div class="panel panel-default">
-                  <div class="panel-thumbnail"><img src="//placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></div>
+                  <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></a></div>
                   <div class="panel-body">
-                    <p class="lead">Animal 2</p>
+                    <p class="lead"><a href="petpage.html">Animal 2</a></p>
                     <p>Description</p>
                 </div>
             </div>
@@ -323,9 +310,9 @@
 
         <div class="col-sm-4 col-xs-6">
             <div class="panel panel-default">
-              <div class="panel-thumbnail"><img src="//placehold.it/450X300/2222DD/2222EE" class="img-responsive"></div>
+              <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/2222DD/2222EE" class="img-responsive"></a></div>
               <div class="panel-body">
-                <p class="lead">Animal 3</p>
+                <p class="lead"><a href="petpage.html">Animal 3</a>    </p>
                 <p>Description</p>
             </div>
         </div>
