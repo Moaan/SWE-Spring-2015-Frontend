@@ -4,7 +4,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="css/stylesheet.css" rel="stylesheet">
-    <link href="css/static-sidebar.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/sticky-footer.css" rel="stylesheet">
     
     <!-- jQuery library -->
@@ -12,6 +12,12 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style >
+        <!-- This is some custom styles to overwrite everything else-->
+        .panel{border: 0px;}
+        .panel-body>p{ text-align: center;}
+
+    </style>
 
 </head>
 <body>
@@ -160,11 +166,12 @@
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    <butto="button" class="btn btn-primary">Sign Up</button>
+    <butto="button" class="btn btn-primary">Sign In</button>
 </div>
 </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 
 
@@ -182,7 +189,7 @@
         <span class="icon-bar"></span>
     </button>
     <div>
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" id="menu-toggle">
             <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Pets Paradise</a>
 
             
@@ -197,12 +204,12 @@
             <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
             <div class="input-group-btn">
               <button class="btn btn-default btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
           </div>
-        </form>-->
-  
+      </div>
+  </form>-->
+
   <ul class="nav navbar-nav">
-    
+     
     <li class="active"><a href="results.html">Dogs<span class="sr-only">(current)</span></a></li>
     <li class="active"><a href="results.html">Cats<span class="sr-only">(current)</span></a></li>
     <li class="dropdown">
@@ -235,112 +242,74 @@
 
 
 
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-sm-1"><br />
+        </div>
+        <div class="col-sm-11">
+            <h1>News</h1>
+        </div>
 
 
-
-<div id="wrapper">
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-
-        <fieldset>
-            <legend><h2>Filters</h2></legend>
-                <label for="type">Pet Type:</label> 
-                <select id="type"> 
-                    <option value="dog">Dogs</option>
-                    <option value="cats">Cats</option>
-                    <option value="birds">Birds</option>
-                    <option value="fish">Fish</option>
-                </select>
-                <br>
-
-                <br>
-                <input id="male" type="radio" name="gender" value="male">
-                <label for="male">Male</label>
-                <input id="female" type="radio" name="gender" value="female">
-                <label for="female">Female</label>
-                <br>
-
-                <br>
-                <label>Age:</label>
-                Can we do "min" & "max" ?
-                <br>
-
-                <br>
-                <label for="location">Location:</label>
-                <input type="text" id="location">
-                <br>
-                <br>
-        </fieldset>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Search Results</h1>
-
-                </div>
-
-
-                <div class="row">
-                 <div class="col-sm-4 col-xs-6">
-                    <div class="panel panel-default">
-                      <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/DD3333/EE3333" class="img-responsive"></a></div>
-                      <div class="panel-body">
-                        <p class="lead"><a href="petpage.html">Animal 1</a></p>
-                        <p>Description</p>
-
-                    </div>
-                </div>
-            </div><!--/col-->
-
-            <div class="col-sm-4 col-xs-6">
+        <div class="row">
+            <div class="col-sm-1"><br />
+            </div>
+            <div class="col-sm-3 col-xs-6">
                 <div class="panel panel-default">
-                  <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/DD66DD/EE77EE" class="img-responsive"></a></div>
                   <div class="panel-body">
-                    <p class="lead"><a href="petpage.html">Animal 2</a></p>
-                    <p>Description</p>
+                  <p class="lead">[Title of Story 1]</p>
+                    <div class="panel-thumbnail"><img src="http://placehold.it/300X150/112233/223344" class="img-responsive"></div>
                 </div>
             </div>
         </div><!--/col-->
+        </div><!--/row-->
 
-        <div class="col-sm-4 col-xs-6">
-            <div class="panel panel-default">
-              <div class="panel-thumbnail"><a href="petpage.html"><img src="http://placehold.it/450X300/2222DD/2222EE" class="img-responsive"></a></div>
-              <div class="panel-body">
-                <p class="lead"><a href="petpage.html">Animal 3</a>    </p>
-                <p>Description</p>
+        <div class="row"><div class="col-sm-1"><br />
             </div>
+        <div class="col-sm-3 col-xs-6">
+            <div class="panel panel-default">
+                  <div class="panel-body">
+                  <p class="lead">[Title of Story 2]</p>
+                    <div class="panel-thumbnail"><img src="http://placehold.it/300X150/445566/556677" class="img-responsive"></div>
+                </div>
         </div>
     </div><!--/col-->
+    </div><!--/row-->
 
+    <div class="row"><div class="col-sm-1"><br />
+            </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="panel panel-default">
+                  <div class="panel-body">
+                  <p class="lead">[Title of Story 3]</p>
+                    <div class="panel-thumbnail"><img src="http://placehold.it/300X150/556677/667788" class="img-responsive"></div>
+                </div>
+    </div>
+</div><!--/col-->
+</div><!--/row-->
+
+<div class="row"><div class="col-sm-1"><br />
+            </div>
+<div class="col-sm-3 col-xs-6">
+    <div class="panel panel-default">
+                  <div class="panel-body">
+                  <p class="lead">[Title of Story 4]</p>
+                    <div class="panel-thumbnail"><img src="http://placehold.it/300X150/8899aa/99aabb" class="img-responsive"></div>
+                </div>
+</div>
+</div><!--/col-->
+</div><!--/row-->
+
+
+
+</div>
+</div>
 </div>
 
 
 
 
-</div>
-</div>
-</div>
-<!-- /#page-content-wrapper -->
 
-</div>
-
-
-
-
-
-<!--
-<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
--->
 
 
 
